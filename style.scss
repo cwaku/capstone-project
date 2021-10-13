@@ -1,3 +1,4 @@
+@use './about';
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
@@ -43,7 +44,8 @@ body {
   }
 
   .banner-summary {
-    font-family: $primaryFont;
+    font-family: $secondaryFont;
+    font-weight: 400;
     border: 1px solid #fff;
     padding: 20px;
     margin: 0 15px 0 20px;
