@@ -1,0 +1,549 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$background: #d3d3d3;
+$color: #585858;
+$primaryColor: #ec5242;
+$secondaryColor: #272a31;
+$primaryFont: 'COCOGOOSE', sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$programImage: 60px;
+$flex: flex;
+
+$height-icon: 50px;
+$width-line: 65px;
+$height-line: 13px;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;
+
+body {
+  background: $background;
+  color: $color;
+  font-family: $secondaryFont;
+}
+
+.banner {
+  padding-bottom: 50px;
+  background-image: url('images/world.png');
+  background-repeat: no-repeat;
+  
+  h1 {
+    font-family: $secondaryFont;
+    color: $primaryColor;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  .banner-summary {
+    font-family: $primaryFont;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 0 15px 0 20px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    font-family: $primaryFont;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+
+  .location {
+    text-transform: capitalize;
+    font-family: $secondaryFont;
+    margin-left: 20px;
+    font-size: 20px
+  }
+}
+
+.programs {
+  background-image: url('images/bg.png');
+  h3 {
+    text-align: center;
+    color: $background;
+    font-size: 30px;
+    padding-top: 33px;
+    text-transform: capitalize;
+  }
+
+  hr {
+    width: 10%;
+    text-align: center;
+    height: 3px;
+    margin-left: 180px;
+    background-color: $primaryColor;
+  }
+
+  button {
+    border: 0;
+    background-color: $primaryColor;
+    color: $background;
+    height: 88px;
+    font-size: 22px;
+    padding: 13px;
+    margin: 29px 44px 29px 44px;
+    text-transform: capitalize;
+    font-family: $secondaryFont;
+  }
+}
+
+.speakers {
+  background-color: #fff;
+  h3 {
+    text-align: center;
+    color: $color;
+    font-size: 30px;
+    padding-top: 33px;
+    text-transform: capitalize;
+    font-family: $secondaryFont;
+  }
+
+  hr {
+    width: 10%;
+    text-align: center;
+    height: 3px;
+    margin-left: 180px;
+    background-color: $primaryColor;
+  }
+
+  button {
+    width: 90%;
+    border: 1px solid $color;
+    background-color: #fff;
+    padding: 20px 5px 20px 5px;
+    margin: 50px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: $color;
+    font-family: $secondaryFont;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-image: url(images/world.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-top: 0;
+
+    .logo {
+      display: none;
+    }
+
+    .nav-menu {
+      display: none;
+    }
+  }
+  
+  #hamburger-icon {
+    width: $width-line;
+    height:$height-icon;
+    position: relative;
+    display: block;
+    margin: 30px 20px 30px;
+    
+    .bar {
+      display: block;
+      background: $secondaryColor;
+      width: $width-line;
+      height: $height-line;
+      position: absolute;
+      left: 0;
+      border-radius: ($height-line / 2);
+      transition: all $transition-time;
+      -webkit-transition: all $transition-time;
+      -moz-transition: all $transition-time;
+      
+      &.bar-1 {
+        top: 0;
+      }
+      &.bar-2 {
+        top: 50%;
+      }
+      &.bar-3 {
+        top: 100%;
+      }
+    }
+    &:hover, &:focus {
+      .bar-1 {
+          transform: translateY($height-line / 2 * -1);
+          -webkit-transform: translateY($height-line / 2 * -1);
+          -moz-transform: translateY($height-line / 2 * -1);
+      }
+      .bar-3 {
+          transform: translateY($height-line / 2);
+          -webkit-transform: translateY($height-line / 2);
+          -moz-transform: translateY($height-line / 2);
+      }  
+    }
+    &.active {
+      .bar-1 {
+        transform: translateY($translateY) translateX($translateX) rotate($rotation);
+        -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+        -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      }
+      .bar-2 {
+        opacity: 0;
+      }
+      .bar-3 {
+        transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+        -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+        -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+      }
+    }
+  }
+
+  .hamburger {
+    text-decoration: none;
+    color: $color;
+    margin: 0.5em 1.5em;
+    display: inline-block;
+
+    &:hover, &:focus {
+      color: $secondaryColor;
+    }
+  }
+  
+  .program-lineout {
+    display: grid; 
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  #program-0 {
+    background-color: rgba(68, 68, 68, 0.64);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: $programImage;
+      margin-top: 74px;
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 20px 5px;
+      font-size: 17px;
+      color: $background;
+    }
+
+    .title {
+      margin-top: 100px;
+      color: $primaryColor;
+    }
+  }
+ 
+ #program-1 {
+   background-color: rgba(68, 68, 68, 0.64);
+   grid-row-start: 2;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 2;
+   display: $flex;
+   
+   img {
+     height: $programImage;
+     margin-top: 74px;
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 20px 5px;
+      font-size: 17px;
+      color: $background;
+    }
+
+    .title {
+      margin-top: 100px;
+      color: $primaryColor;
+    }
+  }
+  
+  #program-2 {
+    background-color: rgba(68, 68, 68, 0.64);
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: $programImage;
+      margin-top: 74px;
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 20px 5px;
+      font-size: 17px;
+      color: $background;
+    }
+
+    .title {
+      margin-top: 100px;
+      color: $primaryColor;
+    }
+  }
+  
+  #program-3 {
+    background-color: rgba(68, 68, 68, 0.64);
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: $programImage;
+      margin-top: 74px;
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 20px 5px;
+      font-size: 17px;
+      color: $background;
+    }
+
+    .title {
+      margin-top: 100px;
+      color: $primaryColor;
+    }
+  }
+  
+  #program-4 {
+    background-color: rgba(68, 68, 68, 0.64);
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: $programImage;
+      margin-top: 74px;
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 20px 5px;
+      font-size: 17px;
+      color: $background;
+    }
+
+    .title {
+      margin-top: 100px;
+      color: $primaryColor;
+    }
+  }
+
+  .speakers-lineout {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    gap: 30px;
+    height: 100%;
+
+    hr {
+      margin-left: 0;
+      background-color: $color;
+    }
+  }
+   
+ #speaker-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+ #speaker-2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+ #speaker-3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+ #speaker-4 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+ #speaker-5 {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+ #speaker-6 {
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-row-end: 7;
+    grid-column-end: 2;
+    display: $flex;
+
+    img {
+      height: 150px;
+      margin: 17px;
+    }
+    
+    h3 {
+      color: $secondaryColor;
+      text-align: left;
+      font-family: $primaryFont;
+      font-size: 25px;
+    }
+
+    .speaker-summary {
+      font-style: italic;
+      color: $primaryColor;
+    }
+
+    p {
+      color: $secondaryColor;
+      font-family: $secondaryFont;
+    }
+ }
+}
