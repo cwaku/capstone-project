@@ -77,8 +77,8 @@
 }
 
 .sub-menu li:nth-child(2) {
-  -webkit-transition-delay: 0.10s;
-          transition-delay: 0.10s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .sub-menu li:nth-child(3) {
@@ -87,8 +87,8 @@
 }
 
 .sub-menu li:nth-child(4) {
-  -webkit-transition-delay: 0.20s;
-          transition-delay: 0.20s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .sub-menu li:nth-child(5) {
@@ -98,7 +98,7 @@
 
 .sub-menu li a {
   color: #fff;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 16px;
   width: 100%;
   display: block;
@@ -117,7 +117,8 @@
   overflow: visible;
 }
 
-.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
   z-index: 100;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -204,7 +205,7 @@
     background-color: #fff;
     text-align: center;
     padding: 5px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
   }
   .banner.banner {
     padding: 100px 100px 128px 100px;
