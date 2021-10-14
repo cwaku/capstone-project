@@ -392,8 +392,6 @@ body {
     grid-column-start: 1;
     grid-row-end: 5;
     grid-column-end: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
