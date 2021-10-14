@@ -3,15 +3,15 @@ const speakerList = document.querySelector('.speakers-lineout');
 
 const speakers = [
   6,
-  (speaker = {
-    name:'Yochi Mormo',
-    image:'images/speaker.pn',
-    summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  {
+    name: 'Yochi Mormo',
+    image: 'images/speaker.png',
+    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     summary2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?',
-  }),
+  },
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   open.addEventListener('click', () => {
     open.classList.toggle('oppenned');
   });
