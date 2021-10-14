@@ -1,21 +1,19 @@
-const hamburger = document.getElementById("hamburger-icon");
 const open = document.querySelector(".open");
-const speakerList = document.querySelector(".speakers-lineout");
+const speakerList = document.querySelector('.speakers-lineout');
 
 const speakers = [
   6,
   (speaker = {
-    name: "Yochi Mormor",
-    image: "images/speaker.png",
-    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    summary2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?",
+    name:'Yochi Mormo',
+    image:'images/speaker.pn',
+    summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    summary2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?',
   }),
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-  open.addEventListener("click", () => {
-    open.classList.toggle("oppenned");
+  open.addEventListener('click', () => {
+    open.classList.toggle('oppenned');
   });
 
   for (let i = 1; i <= speakers[0]; i += 1) {
@@ -28,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <p>${speakers[1].summary2}</p>
   </div>
   </div>`;
-  
+
     speakerList.innerHTML += speakerCards;
   }
 });
