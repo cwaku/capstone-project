@@ -1,4 +1,4 @@
-const open = document.querySelector(".open");
+const open = document.querySelector('.open');
 const speakerList = document.querySelector('.speakers-lineout');
 
 const speakers = [
