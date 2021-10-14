@@ -1,0 +1,119 @@
+.open{
+	position: relative;
+	top: 15px;
+	left: 25px;
+	width: 50px;
+	height: 50px;
+	display: block;
+	cursor: pointer;
+	transition: opacity 0.2s linear;
+	&:hover{
+		opacity: 0.8;
+	}
+	span{
+		display: block;
+		float: left;
+		clear: both;
+		height: 10px;
+		width: 50px;
+		border-radius: 40px;
+		background-color: #272a31;
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		overflow: hidden;
+		transition: all 0.4s ease;
+		&:nth-child(1){
+			margin-top: 10px;
+			z-index: 9;
+		}
+		&:nth-child(2){
+			margin-top: 25px;
+		}
+		&:nth-child(3){
+			margin-top: 40px;
+		}
+	}
+}
+.sub-menu{
+	transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		height: 0;
+		width: 0;
+		left: 0;
+		top: 0;
+		position: relative;
+		background-color: #ec5242;
+		border-radius: 50%;
+		z-index: 18;
+		overflow: hidden;
+		li{
+			display: block;
+			float: right;
+			clear: both;
+			height: auto;
+			margin-right: -160px;
+			transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			&:first-child{
+				margin-top: 180px;
+			}
+			&:nth-child(1){
+				transition-delay: 0.05s;
+			}
+			&:nth-child(2){
+				transition-delay: 0.10s;
+			}
+			&:nth-child(3){
+				transition-delay: 0.15s;
+			}
+			&:nth-child(4){
+				transition-delay: 0.20s;
+			}
+			&:nth-child(5){
+				transition-delay: 0.25s;
+			}
+			a{
+				color: #fff;
+				font-family: 'Lato', Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				width: 100%;
+				display: block;
+				float: left;
+				line-height: 40px;
+			}
+		}
+	}
+
+	.oppenned{
+		.sub-menu{
+			opacity: 1;
+			height: 400px;
+			width: 400px;
+      position: fixed;
+		}
+		span:nth-child(2){
+			overflow: visible;
+		}
+		span:nth-child(1), span:nth-child(3){
+			z-index: 100;
+			transform: rotate(45deg);
+		}
+		span:nth-child(1){
+			transform: rotate(45deg) translateY(12px) translateX(12px);
+		}
+		span:nth-child(2){
+      position: fixed;
+			height: 400px;
+			width: 400px;
+			left: -160px;
+			top: -160px;
+			border-radius: 50%;
+			background-color: #585858;
+		}
+		span:nth-child(3){			
+			transform: rotate(-45deg) translateY(-10px) translateX(10px);
+		}
+		li{
+			margin-right: 168px;
+		}
+	}
+

@@ -1,11 +1,15 @@
 const hamburger = document.getElementById('hamburger-icon');
+const open = document.querySelector('.open');
 
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    document.getElementById('navbar_main').style.display = 'none';
-  });
+  
 
-}); 
+  open.addEventListener('click', () => {
+    open.classList.toggle('oppenned')
+  })
+
+});
+
+

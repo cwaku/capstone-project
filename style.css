@@ -10,7 +10,7 @@ body {
 .banner {
   background-image: url("images/world.png");
   background-repeat: no-repeat;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .banner h1 {
@@ -736,7 +736,7 @@ body {
   }
 
   .partner-list li {
-    padding: 20px;
+    padding: 20px 20px 20px 45px;
   }
 
   .partner-list .image {
