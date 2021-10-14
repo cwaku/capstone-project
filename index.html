@@ -5,12 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/mobileNav.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <header>
+    <!-- mobile menu: only visible on mobile -->
   <div  class="open">
     <span class="cls"></span>
     <span>
@@ -31,6 +33,30 @@
     </span>
     <span class="cls"></span>
   </div>
+  <!-- Desktop menu: only visible on desktop -->
+  <nav>
+    <div class="social">
+      <ul>
+        <li><a><i class="fab fa-facebook-f"></i></a></li>
+        <li><a><i class="fab fa-twitter"></i></a></li>
+        <li><a>English</a></li>
+        <li><a>My page</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li class="navImage"><a><img src="images/headphone.png" alt=""></a></li>
+        <li><a>About</a></li>
+        <li><a>Program</a></li>
+        <li><a>Join</a></li>
+        <li><a>Sponsor</a></li>
+        <li><a>News</a></li>
+        <li><a>Program</a></li>
+        <li><button>CT Campaign</button></li>
+      </ul>
+    </div>
+  </nav>
   </header>
 
   <main>
@@ -76,6 +102,7 @@
             <p>Hear more about the latest in climate from leading authorities, ask all your questions and discuss</p>
         </div>
       </div>
+      <h3 class="go"><a href="">SEE THE WHOLE PROGRAM</a></h3>
       <button>join CT summit program 2021</button>
     </section>
 
@@ -83,24 +110,6 @@
       <h3>featured speakers</h3>
       <hr class="line">
       <div class="speakers-lineout">
-        <div id="speaker-1">
-            <img src="images/speaker.png" alt="">
-            <div>
-            <h3>Yochi Mormor</h3>
-            <p class="speaker-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?</p>
-          </div>
-        </div>
-        <div id="speaker-2">
-          <img src="images/speaker1.png" alt="">
-          <div>
-            <h3>Yochi Mormor</h3>
-            <p class="speaker-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?</p>
-          </div>
-        </div>
       </div>
       <button>More</button>
     </section>

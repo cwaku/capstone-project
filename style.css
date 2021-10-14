@@ -70,11 +70,7 @@ body {
 }
 
 .programs h3 {
-  text-align: center;
-  color: #d3d3d3;
-  font-size: 30px;
-  padding-top: 33px;
-  text-transform: capitalize;
+  display: none;
 }
 
 .programs hr {
@@ -235,7 +231,7 @@ body {
 }
 
 .partner h3 {
-  color: #fff;
+  color: #d3d3d3;
   font-size: 30px;
   padding-top: 42px;
   text-align: center;
@@ -253,92 +249,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    background-image: url(images/world.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    padding-top: 0;
-  }
-
-  .navbar .logo {
+  nav {
     display: none;
-  }
-
-  .navbar .nav-menu {
-    display: none;
-  }
-
-  #hamburger-icon {
-    width: 65px;
-    height: 50px;
-    position: relative;
-    display: block;
-    margin: 30px 20px 30px;
-  }
-
-  #hamburger-icon .bar {
-    display: block;
-    background: #272a31;
-    width: 65px;
-    height: 13px;
-    position: absolute;
-    left: 0;
-    border-radius: 6.5px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-  }
-
-  #hamburger-icon .bar.bar-1 {
-    top: 0;
-  }
-
-  #hamburger-icon .bar.bar-2 {
-    top: 50%;
-  }
-
-  #hamburger-icon .bar.bar-3 {
-    top: 100%;
-  }
-
-  #hamburger-icon:hover .bar-1, #hamburger-icon:focus .bar-1 {
-    transform: translateY(-6.5px);
-    -webkit-transform: translateY(-6.5px);
-    -moz-transform: translateY(-6.5px);
-  }
-
-  #hamburger-icon:hover .bar-3, #hamburger-icon:focus .bar-3 {
-    transform: translateY(6.5px);
-    -webkit-transform: translateY(6.5px);
-    -moz-transform: translateY(6.5px);
-  }
-
-  #hamburger-icon.active .bar-1 {
-    transform: translateY(25px) translateX(0) rotate(45deg);
-    -webkit-transform: translateY(25px) translateX(0) rotate(45deg);
-    -moz-transform: translateY(25px) translateX(0) rotate(45deg);
-  }
-
-  #hamburger-icon.active .bar-2 {
-    opacity: 0;
-  }
-
-  #hamburger-icon.active .bar-3 {
-    transform: translateY(-25px) translateX(0) rotate(-45deg);
-    -webkit-transform: translateY(-25px) translateX(0) rotate(-45deg);
-    -moz-transform: translateY(-25px) translateX(0) rotate(-45deg);
-  }
-
-  .hamburger {
-    text-decoration: none;
-    color: #585858;
-    margin: 0.5em 1.5em;
-    display: inline-block;
-  }
-
-  .hamburger:hover, .hamburger:focus {
-    color: #272a31;
   }
 
   .program-lineout {
@@ -725,7 +637,7 @@ body {
     color: #272a31;
     font-family: "Lato", sans-serif;
   }
-
+  
   .partner-list {
     display: flex;
     flex-direction: column;
@@ -764,23 +676,4 @@ body {
     font-family: 'Lato', sans-serif;
     color: #585858;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .companies {
-    padding: 0 0 5rem 0;
-  }
-
-.logo-box {
-  max-width: 100%;
-  height: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  text-align: center;
-  position: relative;
-}
-
-.companies img {
-  height: 100%;
-}
 }
