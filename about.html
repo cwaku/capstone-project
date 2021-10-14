@@ -1,115 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="scss/mobileNav.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <div  class="open">
-      <span class="cls"></span>
-      <span>
-        <ul class="sub-menu ">
-          <li>
-            <a href="#about" title="about">About</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scss/mobileNav.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- mobile menu: only visible on mobile -->
+      <div class="open">
+        <span class="cls"></span>
+        <span>
+          <ul class="sub-menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Program</a>
+            </li>
+            <li>
+              <a href="#">Join</a>
+            </li>
+            <li>
+              <a href="#">Sponsor</a>
+            </li>
+          </ul>
+        </span>
+        <span class="cls"></span>
+      </div>
+      <!-- Desktop menu: only visible on desktop -->
+      <nav>
+        <div class="social">
+          <ul>
+            <li>
+              <a><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a>English</a></li>
+            <li><a>My page</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li class="navImage">
+              <a><img src="images/headphone.png" alt="" /></a>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Program</a></li>
+            <li><button>CT Campaign</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h1 class="margin-left">the countdown summit program</h1>
+        <div class="banner-summary move white-bg">
+          <p>
+            The Countdown Summit will bring together 1,000 leaders in Edinburgh,
+            Scotland, in October, as TED speakers share a blueprint for a
+            beautiful net-zero future. Four days of inspiring talks and
+            commitments to climate solutions for industry leaders in Edinburgh,
+            Scotland.
+          </p>
+        </div>
+        <p class="location side">
+          Please contact per Email for any further questions about CT summit
+          program 2021 <br />
+          <span>ctsummit2021@gmail.com</span>
+        </p>
+      </section>
+
+      <section class="about">
+        <h3>The countdown summit program 2021 logo</h3>
+        <hr class="line" />
+        <p>
+          The logo of CT summit program was decided through the logo competition
+          from 8.June to 7.July.
+        </p>
+        <div class="about-logo">
+          <img src="images/headphone.png" alt="" />
+        </div>
+      </section>
+
+      <section class="past-events">
+        <h3>See the past Countdown Summits</h3>
+        <hr class="line" />
+        <p class="event-summary">
+          Take a look at last two Countdown Summits which took place virtually
+        </p>
+        <div class="event-list">
+          <div id="event-0">
+            <div class="bg-color">
+              <span>2020</span> <br />
+              Countdown Summit
+            </div>
+          </div>
+          <div id="event-1">
+            <div class="bg-color">
+              <span>2020</span> <br />
+              Countdown Summit
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner">
+        <h3>Partner</h3>
+        <hr class="line" />
+
+        <ul class="partner-list">
+          <li class="image"><img src="images/mozilla.png" alt="" /></li>
+          <li><img src="images/google.png" alt="" /></li>
+          <li><img src="images/air.png" alt="" /></li>
+          <li class="image">
+            <img src="images/ted.png" class="stretch" alt="" />
           </li>
-          <li>
-            <a href="#skills" title="skills">Program</a>
-          </li>
-          <li>
-            <a href="#jobs" title="jobs">Join</a>
-          </li>
-          <li>
-            <a href="#contact" title="contact">Sponsor</a>
+          <li class="image">
+            <img src="images/tesla.png" class="stretch" alt="" />
           </li>
         </ul>
-      </span>
-      <span class="cls"></span>
-    </div>
-    <!-- Desktop menu: only visible on desktop -->
-  <nav>
-    <div class="social">
-      <ul>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a>English</a></li>
-        <li><a>My page</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a><img src="images/headphone.png" alt=""></a></li>
-        <li><a>About</a></li>
-        <li><a>Program</a></li>
-        <li><a>Join</a></li>
-        <li><a>Sponsor</a></li>
-        <li><a>News</a></li>
-        <li><a>Program</a></li>
-        <li><button>CT Campaign</button></li>
-      </ul>
-    </div>
-  </nav>
-  </header>
+      </section>
+      <footer>
+        <div class="footer">
+          <img src="images/headphone.png" alt="" />
+          <p>2021 CT Summit, all rights reserved</p>
+        </div>
+      </footer>
+    </main>
 
-  <main>
-    <section class="banner">
-      <h1>the countdown summit program</h1>
-      <div class="banner-summary white-bg">
-        <p>The Countdown Summit will bring together 1,000 leaders in Edinburgh, Scotland, in October, as TED speakers share a blueprint for a beautiful net-zero future. Four days of inspiring talks and commitments to climate solutions for industry leaders in Edinburgh, Scotland.
-        </p>
-      </div>
-      <p class="location">Please contact per Email for any further questions about CT summit program 2021 <br>
-      <span>ctsummit2021@gmail.com</span>
-    </p>
-    </section>
-
-    <section class="about">
-      <h3>The countdown summit program 2021 logo</h3>
-      <hr class="line">
-      <p>The logo of CT summit program was decided through the logo competition from 8.June to 7.July.</p>
-      <div class="about-logo">
-        <img src="images/headphone.png" alt="">
-      </div>
-    </section>
-
-    <section class="past-events">
-      <h3>See the past Countdown Summits</h3>
-      <hr class="line">
-      <p class="event-summary">Take a look at last two Countdown Summits which took place virtually</p>
-      <div class="event-list">
-        <div id="event-0"><div class="bg-color"><span>2020</span> <br> Countdown Summit</div></div>
-        <div id="event-1"><div class="bg-color"><span>2020</span> <br> Countdown Summit</div></div>
-      </div>
-    </section>
-
-  <section class="partner">
-      <h3>Partner</h3>
-      <hr class="line">
-
-      <ul class="partner-list">
-        <li class="image"><img src="images/mozilla.png" alt=""></li>
-        <li><img src="images/google.png" alt=""></li>
-        <li><img src="images/air.png" alt=""></li>
-        <li class="image"><img src="images/ted.png"  class="stretch" alt=""></li>
-        <li class="image"><img src="images/tesla.png" class="stretch"  alt=""></li>
-
-      </ul>
-</section>
-<footer>
-  <div class="footer">
-    <img src="images/headphone.png" alt="">
-    <p>2021 CT Summit, all rights reserved</p>
-  </div>
-</footer>
-  </main>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>

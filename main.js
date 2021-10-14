@@ -13,22 +13,22 @@ const speakers = [
   }),
 ];
 
-for (let i = 1; i <= speakers[0]; i += 1) {
-  const speakerCards = `<div id="speaker-${i}" class="only-desktop">
-<img src="${speakers[1].image}" alt="Image of speaker">
-<div>
-<h3>${speakers[1].name}</h3>
-<p class="speaker-summary">${speakers[1].summary}</p>
-<hr>
-<p>${speakers[1].summary2}</p>
-</div>
-</div>`;
-
-  speakerList.innerHTML += speakerCards;
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   open.addEventListener("click", () => {
     open.classList.toggle("oppenned");
   });
+
+  for (let i = 1; i <= speakers[0]; i += 1) {
+    const speakerCards = `<div id="speaker-${i}" class="only-desktop">
+  <img src="${speakers[1].image}" alt="Image of speaker">
+  <div>
+  <h3>${speakers[1].name}</h3>
+  <p class="speaker-summary">${speakers[1].summary}</p>
+  <hr>
+  <p>${speakers[1].summary2}</p>
+  </div>
+  </div>`;
+  
+    speakerList.innerHTML += speakerCards;
+  }
 });

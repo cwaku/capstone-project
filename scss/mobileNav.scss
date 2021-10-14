@@ -120,7 +120,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .open {
     display: none;
   }
@@ -148,9 +148,11 @@
       justify-content: center;
       list-style: none;
       color: #585858;
+      margin-bottom: 0;
 
       .navImage {
         padding-right: 20px;
+        padding-top: 0;
 
         img {
           height: 80px;
@@ -176,6 +178,12 @@
     }
   }
 
+  .margin-left.margin-left.margin-left {
+    font-size: 53px;
+    max-width: 86%;
+    margin-left: 109px;
+  }
+
   .banner.banner {
     padding: 100px 100px 128px 100px;
 
@@ -186,6 +194,10 @@
 
     .banner-summary.banner-summary {
       max-width: 40%;
+    }
+
+    .side {
+      margin-left: 80px;
     }
   }
 
@@ -224,6 +236,13 @@
       gap: 5px;
       height: 100%;
       margin: 60px;
+
+      .p-cards {
+        img {
+          height: 50px;
+          margin: 28px 20px 10px 60px;
+        }
+      }
     }
 
     #program-0 {
@@ -232,11 +251,6 @@
       grid-column-start: 1;
       grid-row-end: 2;
       grid-column-end: 2;
-
-      img {
-        height: 100px;
-        margin: 28px 20px 10px 60px;
-      }
 
       p {
         color: #d3d3d3;
@@ -256,11 +270,6 @@
       grid-row-end: 2;
       grid-column-end: 3;
 
-      img {
-        height: 100px;
-        margin: 28px 20px 10px 60px;
-      }
-
       p {
         color: #d3d3d3;
         margin: 10px;
@@ -278,11 +287,6 @@
       grid-column-start: 3;
       grid-row-end: 2;
       grid-column-end: 4;
-
-      img {
-        height: 100px;
-        margin: 28px 20px 10px 60px;
-      }
 
       p {
         color: #d3d3d3;
@@ -302,11 +306,6 @@
       grid-row-end: 2;
       grid-column-end: 5;
 
-      img {
-        height: 100px;
-        margin: 28px 20px 10px 60px;
-      }
-
       p {
         color: #d3d3d3;
         margin: 10px;
@@ -325,11 +324,6 @@
       grid-row-end: 2;
       grid-column-end: 6;
 
-      img {
-        height: 100px;
-        margin: 28px 20px 10px 60px;
-      }
-
       p {
         color: #d3d3d3;
         margin: 10px;
@@ -343,8 +337,13 @@
   }
 
   .speakers.speakers {
+    padding-bottom: 70px;
     hr {
       margin-left: 610px;
+    }
+
+    button {
+      display: none;
     }
   }
 
@@ -390,6 +389,20 @@
     }
   }
 
+  .about-logo {
+    img {
+      height: 140px;
+      padding-left: 40%;
+    }
+  }
+
+  #event-0,
+  #event-1 {
+    max-width: 70%;
+    height: 366px;
+    margin-left: 15%;
+  }
+
   .footer {
     display: flex;
     justify-content: center;
@@ -404,5 +417,10 @@
     p {
       padding-top: 20px;
     }
+  }
+
+  .move.move {
+    margin-left: 80px;
+    max-width: 800px !important;
   }
 }

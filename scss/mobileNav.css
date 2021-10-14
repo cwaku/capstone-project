@@ -148,7 +148,7 @@
   margin-right: 168px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .open {
     display: none;
   }
@@ -186,9 +186,11 @@
             justify-content: center;
     list-style: none;
     color: #585858;
+    margin-bottom: 0;
   }
   nav .navigation ul .navImage {
     padding-right: 20px;
+    padding-top: 0;
   }
   nav .navigation ul .navImage img {
     height: 80px;
@@ -207,6 +209,11 @@
     padding: 5px;
     font-family: "Lato", sans-serif;
   }
+  .margin-left.margin-left.margin-left {
+    font-size: 53px;
+    max-width: 86%;
+    margin-left: 109px;
+  }
   .banner.banner {
     padding: 100px 100px 128px 100px;
   }
@@ -216,6 +223,9 @@
   }
   .banner.banner .banner-summary.banner-summary {
     max-width: 40%;
+  }
+  .banner.banner .side {
+    margin-left: 80px;
   }
   .programs.programs hr {
     margin-left: 610px;
@@ -250,6 +260,10 @@
     height: 100%;
     margin: 60px;
   }
+  .programs.programs .program-lineout .p-cards img {
+    height: 50px;
+    margin: 28px 20px 10px 60px;
+  }
   .programs.programs #program-0 {
     background-color: rgba(68, 68, 68, 0.64);
     -ms-grid-row: 1;
@@ -258,10 +272,6 @@
         grid-column-start: 1;
     grid-row-end: 2;
     grid-column-end: 2;
-  }
-  .programs.programs #program-0 img {
-    height: 100px;
-    margin: 28px 20px 10px 60px;
   }
   .programs.programs #program-0 p {
     color: #d3d3d3;
@@ -280,10 +290,6 @@
     grid-row-end: 2;
     grid-column-end: 3;
   }
-  .programs.programs #program-1 img {
-    height: 100px;
-    margin: 28px 20px 10px 60px;
-  }
   .programs.programs #program-1 p {
     color: #d3d3d3;
     margin: 10px;
@@ -300,10 +306,6 @@
         grid-column-start: 3;
     grid-row-end: 2;
     grid-column-end: 4;
-  }
-  .programs.programs #program-2 img {
-    height: 100px;
-    margin: 28px 20px 10px 60px;
   }
   .programs.programs #program-2 p {
     color: #d3d3d3;
@@ -322,10 +324,6 @@
     grid-row-end: 2;
     grid-column-end: 5;
   }
-  .programs.programs #program-3 img {
-    height: 100px;
-    margin: 28px 20px 10px 60px;
-  }
   .programs.programs #program-3 p {
     color: #d3d3d3;
     margin: 10px;
@@ -343,10 +341,6 @@
     grid-row-end: 2;
     grid-column-end: 6;
   }
-  .programs.programs #program-4 img {
-    height: 100px;
-    margin: 28px 20px 10px 60px;
-  }
   .programs.programs #program-4 p {
     color: #d3d3d3;
     margin: 10px;
@@ -355,8 +349,14 @@
     text-align: center;
     color: #ec5242;
   }
+  .speakers.speakers {
+    padding-bottom: 70px;
+  }
   .speakers.speakers hr {
     margin-left: 610px;
+  }
+  .speakers.speakers button {
+    display: none;
   }
   .speakers-lineout {
     display: -ms-grid;
@@ -410,6 +410,16 @@
   .partner.partner hr {
     margin-left: 600px;
   }
+  .about-logo img {
+    height: 140px;
+    padding-left: 40%;
+  }
+  #event-0,
+  #event-1 {
+    max-width: 70%;
+    height: 366px;
+    margin-left: 15%;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -426,6 +436,10 @@
   }
   .footer p {
     padding-top: 20px;
+  }
+  .move.move {
+    margin-left: 80px;
+    max-width: 800px !important;
   }
 }
 /*# sourceMappingURL=mobileNav.css.map */
