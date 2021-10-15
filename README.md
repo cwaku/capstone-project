@@ -16,7 +16,9 @@
 
 ## See it in action
 
-[Live Demo Link](https://cwaku.github.io/capstone-project/)
+[Click here to see project](https://cwaku.github.io/capstone-project/)
+
+[Click here to see video demo](https://www.loom.com/share/99f1601a4200489c82fe0ecf5062f96f?sharedAppSource=personal_library)
 
 
 ## Getting Started
