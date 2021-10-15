@@ -1,28 +1,27 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Capstone Project - Conference page
 
-> One paragraph statement about the project.
+![Mobile version](./mobile.png)
+![Desktop version](./desktop.png)
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+> An event page for an upcoming conference
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo
+## See it in action
 
-[Live Demo Link](https://livedemo.com)
+[Click here to see project](https://cwaku.github.io/capstone-project/)
+
+[Click here to see video demo](https://www.loom.com/share/99f1601a4200489c82fe0ecf5062f96f?sharedAppSource=personal_library)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
@@ -31,35 +30,20 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+All you have to do is clone and you are good to go
 
 
+## Author
 
-## Authors
+- GitHub: [@cwaku](https://github.com/cwaku)
+- LinkedIn: [Ricky Mormor](www.linkedin.com/in/ricky-mormor)
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/cwaku/capstone-project/issues).
 
 ## Show your support
 
@@ -67,9 +51,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by
+[Cindy Shin in Behance](https://www.behance.net/adagio07)
+
 
 ## 📝 License
 
