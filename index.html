@@ -25,7 +25,7 @@
       <!-- mobile menu: only visible on mobile -->
       <div class="open">
         <span class="cls"></span>
-        <span>
+        <div id=mobile-nav>
           <ul class="sub-menu">
             <li>
               <a href="./about.html">About</a>
@@ -40,7 +40,7 @@
               <a href="#">Sponsor</a>
             </li>
           </ul>
-        </span>
+        </div>
         <span class="cls"></span>
       </div>
       <!-- Desktop menu: only visible on desktop -->
@@ -59,10 +59,8 @@
           </ul>
         </div>
         <div class="navigation">
+          <a><img src="images/headphone.png" class="navImage" alt="" /></a>
           <ul>
-            <li class="navImage">
-              <a><img src="images/headphone.png" alt="" /></a>
-            </li>
             <li><a href="./about.html">About</a></li>
             <li><a href="#">Program</a></li>
             <li><a href="#">Join</a></li>
@@ -128,7 +126,7 @@
         <h3>featured speakers</h3>
         <hr class="line" />
         <div class="speakers-lineout"></div>
-        <button type="button">More</button>
+        <button id="button" type="button">More</button>
       </section>
 
       <section class="partner">
@@ -149,7 +147,7 @@
       </section>
     </main>
     <footer>
-      <div class="footer">
+      <div class="footer color-w">
         <img src="images/headphone.png" alt="" />
         <p>2021 CT Summit, all rights reserved</p>
       </div>

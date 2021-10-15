@@ -16,6 +16,13 @@ body {
   color: #ec5242;
 }
 
+hr {
+  width: 10%;
+  height: 3px !important;
+  margin: auto;
+  background-color: #ec5242;
+}
+
 .banner {
   background-image: url("images/world.png");
   background-repeat: no-repeat;
@@ -82,18 +89,17 @@ body {
 
 .programs {
   background-image: url("images/bg.png");
+  padding-bottom: 20px;
 }
 
-.programs h3 {
+.programs .go {
   display: none;
 }
 
-.programs hr {
-  width: 10%;
+.programs h3 {
   text-align: center;
-  height: 3px;
-  margin-left: 180px;
-  background-color: #ec5242;
+  color: #d3d3d3;
+  padding-top: 20px;
 }
 
 .programs button {
@@ -121,12 +127,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.speakers hr {
-  width: 10%;
-  text-align: center;
-  height: 3px;
-  margin-left: 180px;
-  background-color: #ec5242;
+#speaker-1 .speaker-summary,
+#speaker-2 .speaker-summary,
+#speaker-3 .speaker-summary,
+#speaker-4 .speaker-summary,
+#speaker-5 .speaker-summary,
+#speaker-6 .speaker-summary {
+  font-style: italic;
+  color: #ec5242;
+}
+
+.speakers-lineout hr {
+  margin-left: 0;
+  background-color: #585858;
 }
 
 .speakers button {
@@ -145,6 +158,7 @@ body {
   background-color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 900;
+  padding-bottom: 5px;
 }
 
 .about h3 {
@@ -154,14 +168,6 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   text-align: center;
-}
-
-.about hr {
-  width: 10%;
-  text-align: center;
-  height: 3px;
-  margin-left: 40%;
-  background-color: #ec5242;
 }
 
 .past-events {
@@ -176,14 +182,6 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   text-align: center;
-}
-
-.past-events hr {
-  width: 10%;
-  text-align: center;
-  height: 3px;
-  margin-left: 40%;
-  background-color: #ec5242;
 }
 
 .past-events .event-summary {
@@ -254,12 +252,9 @@ body {
   padding-bottom: 20px;
 }
 
-.partner hr {
-  width: 10%;
-  text-align: center;
-  height: 3px;
-  margin-left: 180px;
-  background-color: #ec5242;
+.about-logo {
+  border: 1px solid #d3d3d3;
+  margin: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -290,12 +285,16 @@ body {
     display: flex;
   }
 
+  .off.off {
+    display: block;
+  }
+
   .footer img {
     height: 100px;
   }
 
   .partner-list img {
-    height: 70px;
+    height: 42px;
   }
 
   .about-logo img {
@@ -451,11 +450,6 @@ body {
     gap: 30px;
   }
 
-  .speakers-lineout hr {
-    margin-left: 0;
-    background-color: #585858;
-  }
-
   #speaker-1 {
     grid-row: 1;
     grid-row-start: 1;
@@ -476,11 +470,6 @@ body {
     text-align: left;
     font-family: "COCOGOOSE", sans-serif;
     font-size: 25px;
-  }
-
-  #speaker-1 .speaker-summary {
-    font-style: italic;
-    color: #ec5242;
   }
 
   #speaker-1 p {
@@ -542,11 +531,6 @@ body {
     font-size: 25px;
   }
 
-  #speaker-3 .speaker-summary {
-    font-style: italic;
-    color: #ec5242;
-  }
-
   #speaker-3 p {
     color: #272a31;
     font-family: "Lato", sans-serif;
@@ -572,11 +556,6 @@ body {
     text-align: left;
     font-family: "COCOGOOSE", sans-serif;
     font-size: 25px;
-  }
-
-  #speaker-4 .speaker-summary {
-    font-style: italic;
-    color: #ec5242;
   }
 
   #speaker-4 p {
@@ -606,11 +585,6 @@ body {
     font-size: 25px;
   }
 
-  #speaker-5 .speaker-summary {
-    font-style: italic;
-    color: #ec5242;
-  }
-
   #speaker-5 p {
     color: #272a31;
     font-family: "Lato", sans-serif;
@@ -638,11 +612,6 @@ body {
     font-size: 25px;
   }
 
-  #speaker-6 .speaker-summary {
-    font-style: italic;
-    color: #ec5242;
-  }
-
   #speaker-6 p {
     color: #272a31;
     font-family: "Lato", sans-serif;
@@ -650,25 +619,19 @@ body {
 
   .partner-list {
     display: flex;
-    flex-direction: column;
-  }
-
-  .partner-list li {
-    padding: 20px 20px 20px 45px;
-  }
-
-  .partner-list .image {
-    margin-left: 30px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-around;
   }
 
   .partner-list .stretch {
-    width: 200px;
-    height: 100px;
+    height: 72px;
   }
 
   .footer {
     display: flex;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 21px 29px;
+    justify-content: space-around;
   }
 }

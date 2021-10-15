@@ -1,3 +1,6 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
 .open {
   position: relative;
   top: 15px;
@@ -35,8 +38,21 @@
   z-index: 9;
 }
 
-.open span:nth-child(2) {
+.open #mobile-nav {
+  display: block;
+  float: left;
+  clear: both;
+  height: 10px;
+  width: 50px;
+  background-color: #272a31;
+  right: 3px;
+  top: 3px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   margin-top: 25px;
+  border-radius: 10px;
 }
 
 .open span:nth-child(3) {
@@ -129,7 +145,7 @@
   transform: rotate(45deg) translateY(12px) translateX(12px);
 }
 
-.oppenned span:nth-child(2) {
+.oppenned #mobile-nav {
   position: fixed;
   height: 400px;
   width: 400px;
@@ -144,6 +160,11 @@
   -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
   transform: rotate(-45deg) translateY(-10px) translateX(10px);
 }
+
+.off {
+  display: none;
+}
+
 
 @media screen and (min-width: 768px) {
   .open {
@@ -167,11 +188,20 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-right: 300px;
+    padding-right: 10%;
   }
 
   nav .social ul li {
     padding: 15px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navigation .navImage {
+    height: 70px;
   }
 
   nav .navigation ul {
@@ -184,9 +214,10 @@
     margin-bottom: 0;
   }
 
-  nav .navigation ul .navImage {
-    padding-right: 20px;
-    padding-top: 0;
+  .about-logo {
+    border: 1px solid #d3d3d3;
+    margin: 20px 25%;
+    padding: 42px;
   }
 
   .about-logo img {
@@ -197,10 +228,6 @@
   .footer img {
     height: 70px;
     padding: 0 100px 0 0;
-  }
-
-  nav .navigation ul .navImage img {
-    height: 80px;
   }
 
   nav .navigation ul li {
@@ -241,10 +268,6 @@
 
   .banner.banner .side {
     margin-left: 80px;
-  }
-
-  .programs.programs hr {
-    margin-left: 610px;
   }
 
   .programs.programs h3 {
@@ -396,11 +419,7 @@
   }
 
   .speakers.speakers {
-    padding-bottom: 70px;
-  }
-
-  .speakers.speakers hr {
-    margin-left: 610px;
+    padding-bottom: 100px;
   }
 
   .speakers.speakers button {
@@ -416,7 +435,7 @@
     grid-template-columns: auto auto;
     gap: 0;
     height: 100%;
-    margin: 0 85px;
+    margin: 0 15%;
   }
 
   .speakers-lineout #speaker-1,
@@ -425,12 +444,7 @@
   .speakers-lineout #speaker-4,
   .speakers-lineout #speaker-5,
   .speakers-lineout #speaker-6 {
-    height: 180px;
     display: flex;
-  }
-
-  .partner.partner hr {
-    margin-left: 600px;
   }
 
   .speakers-lineout #speaker-1 img,
@@ -456,6 +470,7 @@
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    margin-top: 25px;
   }
 
   #event-0,
@@ -471,7 +486,13 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 40px;
+    background-color: #585858;
+    color: #d3d3d3;
+  }
+
+  .color-w {
     background-color: #fff;
+    color: #585858;
   }
 
   .move.move {

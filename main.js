@@ -1,10 +1,11 @@
 const open = document.querySelector('.open');
 const speakerList = document.querySelector('.speakers-lineout');
+const btn = document.getElementById('button');
 
 const speakers = [
   6,
   {
-    name: 'Yochi Mormo',
+    name: 'Yochi Mormor',
     image: 'images/speaker.png',
     summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     summary2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas?',
@@ -28,5 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>`;
 
     speakerList.innerHTML += speakerCards;
+  }
+
+  const eachSpeaker = document.querySelectorAll('#speaker-3, #speaker-4, #speaker-5, #speaker-6');
+
+  if (window.innerWidth < 768) {
+    eachSpeaker.forEach((el) => {
+      el.style.display = 'none';
+    });
+
+    btn.addEventListener('click', () => {
+      eachSpeaker.forEach((el) => {
+        el.style.display = 'flex';
+      });
+
+      btn.style.display = 'none';
+    });
   }
 });
