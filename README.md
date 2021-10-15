@@ -1,28 +1,25 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Capstone Project - Conference page
 
-> One paragraph statement about the project.
+![Mobile version](./mobile.png)
+![Desktop version](./desktop.png)
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+> An event page for an upcoming conference
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo
+## See it in action
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://cwaku.github.io/capstone-project/)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
@@ -31,14 +28,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+All you have to do is clone and you are good to go
 
 
 ## Author
