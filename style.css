@@ -304,7 +304,7 @@ hr {
 
   #program-0 img {
     height: 60px;
-    margin-top: 74px;
+    margin-top: 12%;
     margin-left: 5px;
   }
 
@@ -323,8 +323,9 @@ hr {
   }
 
   #program-0 .title {
-    margin-top: 100px;
     color: #ec5242;
+    margin-top: 16%;
+    margin-bottom: 12%;
   }
 
   #program-1 {
@@ -340,7 +341,7 @@ hr {
 
   #program-1 img {
     height: 60px;
-    margin-top: 74px;
+    margin-top: 12%;
     margin-left: 5px;
   }
 
@@ -351,8 +352,9 @@ hr {
   }
 
   #program-1 .title {
-    margin-top: 100px;
     color: #ec5242;
+    margin-top: 16%;
+    margin-bottom: 12%;
   }
 
   #program-2 {
@@ -368,7 +370,7 @@ hr {
 
   #program-2 img {
     height: 60px;
-    margin-top: 74px;
+    margin-top: 12%;
     margin-left: 5px;
   }
 
@@ -379,8 +381,9 @@ hr {
   }
 
   #program-2 .title {
-    margin-top: 100px;
     color: #ec5242;
+    margin-top: 16%;
+    margin-bottom: 12%;
   }
 
   #program-3 {
@@ -396,7 +399,7 @@ hr {
 
   #program-3 img {
     height: 60px;
-    margin-top: 74px;
+    margin-top: 12%;
     margin-left: 5px;
   }
 
@@ -407,8 +410,9 @@ hr {
   }
 
   #program-3 .title {
-    margin-top: 100px;
     color: #ec5242;
+    margin-top: 16%;
+    margin-bottom: 12%;
   }
 
   #program-4 {
@@ -424,7 +428,7 @@ hr {
 
   #program-4 img {
     height: 60px;
-    margin-top: 74px;
+    margin-top: 12%;
     margin-left: 5px;
   }
 
@@ -435,7 +439,8 @@ hr {
   }
 
   #program-4 .title {
-    margin-top: 100px;
+    margin-top: 16%;
+    margin-bottom: 12%;
     color: #ec5242;
   }
 
